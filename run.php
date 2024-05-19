@@ -33,7 +33,7 @@ for ($i = 1; $i < $max + 1; $i++) {
     $proxy = $proxies[array_rand($proxies)];
     $class = new autovisitor($url, $proxy);
     echo $putih . "[$i] VISITORS SENT FROM (" . $class->run() . ") USING PROXY $proxy\n";
-    usleep($delay * 1000); // converting milliseconds to microseconds
+    usleep($delay * 100); // converting milliseconds to microseconds
 }
 echo "\n";
 echo $hijau . "[x] FINISHED $putih\n";
