@@ -22,11 +22,12 @@ echo "\n";
 
 // List of proxy servers
 $proxies = [
-    "proxy1:port1",
-    "proxy2:port2",
-    "proxy3:port3"
-    // Add more proxies as needed
+    "123.456.789.000:8080",
+    "234.567.890.123:3128",
+    "345.678.901.234:8000"
+    // أضف المزيد من البروكسيات حسب الحاجة
 ];
+
 
 for ($i = 1; $i < $max + 1; $i++) {
     $proxy = $proxies[array_rand($proxies)];
